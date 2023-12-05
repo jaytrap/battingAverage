@@ -1,0 +1,19 @@
+Initialize total_score to 0
+Initialize innings to 0
+Initialize status to 'c'
+
+while status is 'c':
+    Display prompt to enter score for an inning
+    Read user input and store it in the variable score
+
+    if score is numeric:
+        Convert score to an integer and add it to total_score
+        Increment innings by 1
+    elif score is 'q':
+        Set status to 'q' to exit the loop
+
+if innings is 0:
+    Display "No valid score entered"
+else:
+    Calculate average by dividing total_score by innings
+    Display "The average runs scored is: " followed by the calculated average with two decimal places

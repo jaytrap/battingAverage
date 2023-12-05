@@ -1,0 +1,25 @@
+Initialize total_score to 0
+Initialize number_of_innings to 0
+
+Repeat until explicitly terminated:
+    Display "Enter number of runs scored (-1 to finish) : "
+    Try:
+        Read input as score
+        If input is not an integer:
+            Display "Invalid input. Please enter a valid integer."
+            Continue to the next iteration
+    Catch ValueError:
+        Display "Invalid input. Please enter a valid integer."
+        Continue to the next iteration
+
+    If score is equal to -1:
+        Exit the loop
+
+    Increment number_of_innings by 1
+    Add score to total_score
+
+If number_of_innings is equal to 0:
+    Display "No valid score entered"
+Else:
+    Calculate average_score as total_score divided by number_of_innings
+    Display "The average runs scored is: " followed by average_score with two decimal places
